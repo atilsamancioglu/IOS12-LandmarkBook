@@ -13,6 +13,12 @@
 		FCF124C922D7B8CD005CF194 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCF124C722D7B8CD005CF194 /* Main.storyboard */; };
 		FCF124CB22D7B8CE005CF194 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCF124CA22D7B8CE005CF194 /* Assets.xcassets */; };
 		FCF124CE22D7B8CE005CF194 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCF124CC22D7B8CE005CF194 /* LaunchScreen.storyboard */; };
+		FCF124DA22D7BCCF005CF194 /* stonehenge.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FCF124D522D7BCCE005CF194 /* stonehenge.jpg */; };
+		FCF124DB22D7BCCF005CF194 /* tajmahal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FCF124D622D7BCCF005CF194 /* tajmahal.jpg */; };
+		FCF124DC22D7BCCF005CF194 /* colosseum.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FCF124D722D7BCCF005CF194 /* colosseum.jpg */; };
+		FCF124DD22D7BCCF005CF194 /* kremlin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FCF124D822D7BCCF005CF194 /* kremlin.jpg */; };
+		FCF124DE22D7BCCF005CF194 /* greatwall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FCF124D922D7BCCF005CF194 /* greatwall.jpg */; };
+		FCF124E022D7C3C5005CF194 /* imageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF124DF22D7C3C5005CF194 /* imageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		FCF124CA22D7B8CE005CF194 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCF124CD22D7B8CE005CF194 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCF124CF22D7B8CE005CF194 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCF124D522D7BCCE005CF194 /* stonehenge.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stonehenge.jpg; sourceTree = "<group>"; };
+		FCF124D622D7BCCF005CF194 /* tajmahal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tajmahal.jpg; sourceTree = "<group>"; };
+		FCF124D722D7BCCF005CF194 /* colosseum.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = colosseum.jpg; sourceTree = "<group>"; };
+		FCF124D822D7BCCF005CF194 /* kremlin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kremlin.jpg; sourceTree = "<group>"; };
+		FCF124D922D7BCCF005CF194 /* greatwall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = greatwall.jpg; sourceTree = "<group>"; };
+		FCF124DF22D7C3C5005CF194 /* imageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +68,15 @@
 		FCF124C022D7B8CD005CF194 /* LandmarkBook */ = {
 			isa = PBXGroup;
 			children = (
+				FCF124D722D7BCCF005CF194 /* colosseum.jpg */,
+				FCF124D922D7BCCF005CF194 /* greatwall.jpg */,
+				FCF124D822D7BCCF005CF194 /* kremlin.jpg */,
+				FCF124D522D7BCCE005CF194 /* stonehenge.jpg */,
+				FCF124D622D7BCCF005CF194 /* tajmahal.jpg */,
 				FCF124C122D7B8CD005CF194 /* AppDelegate.swift */,
 				FCF124C322D7B8CD005CF194 /* SceneDelegate.swift */,
 				FCF124C522D7B8CD005CF194 /* ViewController.swift */,
+				FCF124DF22D7C3C5005CF194 /* imageViewController.swift */,
 				FCF124C722D7B8CD005CF194 /* Main.storyboard */,
 				FCF124CA22D7B8CE005CF194 /* Assets.xcassets */,
 				FCF124CC22D7B8CE005CF194 /* LaunchScreen.storyboard */,
@@ -126,8 +144,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCF124CE22D7B8CE005CF194 /* LaunchScreen.storyboard in Resources */,
+				FCF124DD22D7BCCF005CF194 /* kremlin.jpg in Resources */,
+				FCF124DA22D7BCCF005CF194 /* stonehenge.jpg in Resources */,
+				FCF124DC22D7BCCF005CF194 /* colosseum.jpg in Resources */,
 				FCF124CB22D7B8CE005CF194 /* Assets.xcassets in Resources */,
 				FCF124C922D7B8CD005CF194 /* Main.storyboard in Resources */,
+				FCF124DB22D7BCCF005CF194 /* tajmahal.jpg in Resources */,
+				FCF124DE22D7BCCF005CF194 /* greatwall.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +163,7 @@
 			files = (
 				FCF124C622D7B8CD005CF194 /* ViewController.swift in Sources */,
 				FCF124C222D7B8CD005CF194 /* AppDelegate.swift in Sources */,
+				FCF124E022D7C3C5005CF194 /* imageViewController.swift in Sources */,
 				FCF124C422D7B8CD005CF194 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
