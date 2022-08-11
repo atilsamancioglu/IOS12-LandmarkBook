@@ -8,7 +8,7 @@
 
 import UIKit
 
-class imageViewController: UIViewController {
+class DetailsVC: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var landmarkLabel: UILabel!

@@ -36,9 +36,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         landmarkImages.append(UIImage(named: "kremlin.jpg")!)
         landmarkImages.append(UIImage(named: "stonehenge.jpg")!)
         landmarkImages.append(UIImage(named: "tajmahal.jpg")!)
-        
-       navigationItem.title = "Landmark Book"
-        
+                
     }
     
     
@@ -54,7 +52,10 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = landmarkNames[indexPath.row]
+        //cell.textLabel?.text = "test"
+        var content = cell.defaultContentConfiguration()
+        content.text = landmarkNames[indexPath.row]
+        cell.contentConfiguration = content
         return cell
     }
     
@@ -66,12 +67,12 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         chosenLandmarkName = landmarkNames[indexPath.row]
         chosenLandmarkImage = landmarkImages[indexPath.row]
         
-        performSegue(withIdentifier: "toImageViewController", sender: nil)
+        performSegue(withIdentifier: "toDetailsVC", sender: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "toImageViewController" {
-            let destinationVC = segue.destination as! imageViewController
+        if segue.identifier == "toDetailsVC" {
+            let destinationVC = segue.destination as! DetailsVC
             destinationVC.selectedLandmarkName = chosenLandmarkName
             destinationVC.selectedLandmarkImage = chosenLandmarkImage
         }
